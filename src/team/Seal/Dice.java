@@ -10,7 +10,7 @@ public class Dice {
     /**Red Die*/
     String[] red = new String[] {"Brain","Run","Run","Shot","Shot","Shot"};
 
-    /**String[] values - Array for the differnet faces of the dice*/
+    /**String[] values - Array for the different faces of the die*/
 
 
 
