@@ -7,7 +7,7 @@ public class Player {
 
     public Player(String name){
 
-        this.Name = Name;
+        this.Name = name;
         this.points = 0;
     }
 
