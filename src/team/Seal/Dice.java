@@ -1,5 +1,7 @@
 package team.Seal;
 
+import java.util.Random;
+
 public class Dice {
 
 
@@ -11,20 +13,27 @@ public class Dice {
     String[] red = new String[] {"Brain","Run","Run","Shot","Shot","Shot"};
 
     /**String[] values - Array for the different faces of the die*/
+    private String color;
 
-
-
-    private String[] values;
-
-
-    private Dice(String[] values) {
-        this.values = values;
+    public Dice(String color) {
+    	this.color = color;
     }
 
-    public String[] getValues() {
-        return values;
+    public String roll() {
+    	Random rand = new Random();
+    	String value = "";
+    	switch(color) {
+    	case "green":
+    		value = green[rand.nextInt(6)];
+    		break;
+    	case "red":
+    		value = red[rand.nextInt(6)];
+    		break;
+    	case "yellow":
+    		value = yellow[rand.nextInt(6)];
+    	}
+    	return value;
     }
-
 
 }
 
