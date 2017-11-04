@@ -18,6 +18,10 @@ public class Dice {
     public Dice(String color) {
     	this.color = color;
     }
+    
+    public String getColor() {
+    	return color;
+    }
 
     public String roll() {
     	Random rand = new Random();

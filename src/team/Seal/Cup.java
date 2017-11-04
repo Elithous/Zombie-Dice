@@ -26,7 +26,7 @@ public class Cup {
 		Dice die;
 		do {
 			die = dice[rand.nextInt(13)];
-		} while(die != null);
+		} while(die == null);
 		return die;
 	}
 }
